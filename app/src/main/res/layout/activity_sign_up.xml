@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_10"
+    tools:context=".Activity.SignUp">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_above="@+id/btnNext"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="GOBOBAKA"
+               android:layout_marginTop="@dimen/space_10"
+               android:padding="@dimen/space_5"
+               android:layout_marginLeft="@dimen/space_10"
+               android:fontFamily="@font/gilroybold"
+               android:textSize="25sp"/>
+           <ImageView
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               app:srcCompat="@drawable/ic_deliveryboy"
+
+               android:layout_gravity="center"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Create an account"
+               android:padding="@dimen/space_5"
+               android:fontFamily="@font/gilroybold"
+               android:textSize="18sp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/space_5"
+               android:orientation="vertical">
+               
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Name"
+                   android:fontFamily="@font/bold"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold"/>
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:id="@+id/edName"
+                   android:layout_marginTop="@dimen/space_10"
+                   android:background="@drawable/edit_bg1"
+                   android:drawableRight="@drawable/ic_action_nav_user"
+                   android:fontFamily="@font/poppins"
+                   android:inputType="text"
+                   android:padding="@dimen/space_5"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/space_5"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Email"
+                   android:fontFamily="@font/bold"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold"/>
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="@dimen/space_10"
+                   android:id="@+id/edEmail"
+                   android:background="@drawable/edit_bg1"
+                   android:drawableRight="@drawable/ic_email"
+                   android:fontFamily="@font/poppins"
+                   android:inputType="textEmailAddress"
+                   android:padding="@dimen/space_5"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/space_5"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Password"
+                   android:fontFamily="@font/bold"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold"/>
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="@dimen/space_10"
+                   android:background="@drawable/edit_bg1"
+                   android:drawableRight="@drawable/ic_password"
+                   android:fontFamily="@font/poppins"
+                   android:id="@+id/edPassword"
+                   android:inputType="textPassword"
+                   android:padding="@dimen/space_5"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/space_5"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Address"
+                   android:fontFamily="@font/bold"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold"/>
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="@dimen/space_10"
+                   android:background="@drawable/edit_bg1"
+                   android:drawableRight="@drawable/ic_address"
+                   android:fontFamily="@font/poppins"
+                   android:inputType="text"
+                   android:id="@+id/edAddress"
+                   android:padding="@dimen/space_5"
+                   android:textSize="@dimen/space_18"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+   </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/space_20"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnNext3"
+        android:textColor="#fff"
+        android:background="@drawable/edit_bg2"
+        android:text="N E X T"/>
+
+
+
+
+</RelativeLayout>

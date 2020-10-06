@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OtpVerify">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:background="@drawable/curvy_back_bottom"
+            android:id="@+id/header_top"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_20"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="ENTER VERIFICATION CODE"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:lottie_fileName="otp1.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/header_top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="@dimen/space_20"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/footer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Please type the verification code sent to your mobile"
+                android:textColor="#372857"
+                android:textSize="16sp" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="______"
+                android:paddingLeft="20sp"
+                android:paddingRight="@dimen/space_20"
+                android:paddingBottom="@dimen/space_8"
+                android:paddingTop="@dimen/space_8"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:letterSpacing="1"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/edit_bg1"
+                android:backgroundTint="#5C9C8678"
+                android:fontFamily="@font/bold"
+                android:maxLength="6"
+                android:digits = "1234567890"
+                android:textSize="@dimen/space_20"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:id="@+id/edOtp"
+                android:inputType="number"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/bold"
+                android:textSize="@dimen/space_20"
+                android:paddingLeft="@dimen/space_20"
+                android:paddingRight="@dimen/space_20"
+                android:id="@+id/btnNext2"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/edit_bg2"
+                android:text="N E X T"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_20"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#2E2C2C"
+                android:layout_marginBottom="@dimen/space_10"
+                android:textDirection="firstStrongLtr"
+                android:text="Did not get code ? Resend it."/>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

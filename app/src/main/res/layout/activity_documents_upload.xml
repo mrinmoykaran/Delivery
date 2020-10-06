@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DocumentsUpload">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnRegister"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/top_header1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:fontFamily="@font/gilroybold"
+                    android:padding="@dimen/space_5"
+                    android:text="GOBOBAKA"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/top_header2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_header1"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:fontFamily="@font/poppins"
+                    android:text="Please upload documents to verify"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/space_10"
+                android:layout_gravity="center">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/space_20"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginRight="30dp"
+                   android:background="@drawable/edit_bg3"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_weight="1"
+                       android:layout_height="70dp"
+                       android:layout_marginRight="@dimen/space_10"
+                       app:srcCompat="@drawable/ic_upload"/>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/poppins"
+                           android:textSize="@dimen/space_18"
+                           android:text="Adhar Card"/>
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="40dp"
+                           android:text="UPLOAD"
+                           android:layout_gravity="right"
+                           android:textSize="@dimen/space_15"
+                           android:fontFamily="@font/poppins"
+                           android:background="#383A38"
+                           android:textColor="#fff"
+                           android:paddingLeft="@dimen/space_20"
+                           android:paddingRight="@dimen/space_20"/>
+                   </LinearLayout>
+               </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/space_10"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_20"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edit_bg3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_weight="1"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="@dimen/space_10"
+                        app:srcCompat="@drawable/ic_upload"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="@dimen/space_18"
+                            android:text="Bank Statement"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="UPLOAD"
+                            android:textSize="@dimen/space_15"
+                            android:fontFamily="@font/poppins"
+                            android:background="#383A38"
+                            android:layout_gravity="right"
+                            android:textColor="#fff"
+                            android:paddingLeft="@dimen/space_20"
+                            android:paddingRight="@dimen/space_20"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/space_20"
+        android:elevation="0dp"
+        android:layout_marginBottom="@dimen/space_15"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit_bg2"
+        android:text="R E G I S T E R"/>
+        android:text="R E G I S T E R"/>
+
+</RelativeLayout>

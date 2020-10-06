@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PhoneRegistration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join With Us"
+            android:layout_marginTop="@dimen/space_10"
+            android:padding="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_10"
+            android:fontFamily="@font/gilroybold"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:fontFamily="@font/poppins"
+            android:padding="@dimen/space_5"
+            android:text="Please provide your mobile no"
+            android:textSize="25sp" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:lottie_fileName="delivery_boy.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@drawable/edit_bg1"
+                android:id="@+id/edMobile"
+                android:drawableRight="@drawable/ic_mobile"
+                android:fontFamily="@font/poppins"
+                android:hint="Enter Your Mobile"
+                android:inputType="phone"
+                android:padding="@dimen/space_10"
+                android:textSize="@dimen/space_20"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/bold"
+                    android:textSize="@dimen/space_20"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:textColor="#fff"
+                    android:id="@+id/btnNext1"
+                    android:background="@drawable/edit_bg2"
+                    android:text="N E X T"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_20"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:text="Already Registered ?"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
